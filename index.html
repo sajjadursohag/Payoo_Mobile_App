@@ -14,7 +14,14 @@
       type="text/css"
     />
   </head>
-  <body class="bg-[#f4f5f7] h-[100vh] flex justify-center items-center">
+  <body class="bg-[#f4f5f7] h-[100vh] flex justify-center items-center flex-col">
+
+    <div class="h-[130px] w-[300px] bg-[url(./assets/bg.png)] bg-cover flex justify-center items-center">
+
+        <img src="./assets/Group.png"  alt="" />
+
+    </div>
+
     <form class="w-[350px] bg-white rounded-xl p-7">
       <div>
         <label class="font-semibold" for="">Mobile Number</label>
@@ -26,9 +33,12 @@
         <br>
         <input type="text" placeholder="Enter 4 Digit Pin" class="input bg-[#f4f5f7] mt-3 rounded-xl" />
       </div>
-      <button class="btn bg-[#0874F2] text-white mt-5 w-full rounded-xl">Login</button>
+      <button id="loginButton" class="btn bg-[#0874F2] text-white mt-5 w-full rounded-xl">Login</button>
 
     
     </form>
+
+    <!-- js scripts -->
+     <script src="./script.js"></script>
   </body>
 </html>
