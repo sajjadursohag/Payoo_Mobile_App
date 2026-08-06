@@ -4,9 +4,19 @@ document
     e.preventDefault();
     console.log("Add money received");
 
-    const bank = doucment.getElementById("bank").value;
+    const bank = document.getElementById("bank").value;
     const accountNumber = document.getElementById("account-number").value;
     const amount = parseInt(document.getElementById("add-amount").value);
 
-    const pin;
+    const pin = document.getElementById("add-pin").value;
+    const avilableBalance = parseInt(
+      document.getElementById("availble-balance").innerText,
+    );
+
+    console.log(avilableBalance);
+
+    const totalNewAvailableBalance = amount + avilableBalance;
+
+    document.getElementById("availble-balance").innerText =
+      totalNewAvailableBalance;
   });
